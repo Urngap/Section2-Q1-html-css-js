@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+display: flex;
+background-color: lightgreen;
+height: 400px;
+}
+
+.first, .second {
+    border-right: 1px solid black;
+}
+
+.first {
+    width: 200px;
+    flex: 0 0 200px;
+}
+
+.second {
+flex: 1
+}
+
+.third {
+    width: 300px;
+    flex: 0 0 300px;
+}
+
+@media (max-width:600px) {
+    .container{
+        overflow: scroll;
+    }
+}
